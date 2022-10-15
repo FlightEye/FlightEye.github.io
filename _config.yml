@@ -4,43 +4,48 @@ baseurl:
 # Site settings
 title: FlightEye
 email: burnettcj1966@gwu.edu
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "FlightEye is a revolutionary new product that will change the way pilots view safety."
 
 
 # Team names, titles and social links
-people:
-- name: Kay Garland
+peopleTop:
+- name: Jett Jacobs
   pic: 1
-  position: Lead Designer
+  position: Unity/XR Lead
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
     - title: linkedin
-      url: #
+      url: https://www.linkedin.com/feed/update/urn:li:activity:6979252947675181056/
+    - title: github
+      url: https://github.com/jettjacobs
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
+- name: Noah Chinitz
+  pic: 2
+  position: Hardware/Linux Lead
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+    - title: linkedin
+      url: https://www.linkedin.com/in/noah-chinitz-024032142/
+    - title: github
+      url: https://github.com/NoahChinitzGWU
+
+peopleBottom:
+- name: Aaron Hill
+  pic: 3
+  position: Research Lead
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/aaron-hill-466228198/
+    - title: github
+      url: https://github.com/aaronmhill01
+
+- name: Connor Burnett
+  pic: 4
+  position: Software Engineering Lead
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/connor-burnett-754225198/
+    - title: github
+      url: https://github.com/burnettcj1966
+
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
