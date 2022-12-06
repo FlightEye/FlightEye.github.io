@@ -1,15 +1,12 @@
 ---
-title: Golden
-subtitle: Website Design
+title: Elevator Pitch
+subtitle: Presentation 1
 layout: default
 modal-id: 3
-date: 2014-07-16
+date: 2022-10-10
 img: golden.png
-thumbnail: golden-thumbnail.png
+thumbnail: elevatorpitch.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: <iframe width='100%' height='1500' src="https://gwu0-my.sharepoint.com/personal/burnettcj1966_gwu_edu/_layouts/15/Doc.aspx?sourcedoc={08ad1c62-e045-4771-9a3d-d94c642962da}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 
 ---

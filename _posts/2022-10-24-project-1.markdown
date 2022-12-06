@@ -1,0 +1,13 @@
+---
+title: Project Design
+subtitle: Presentation 2
+layout: default
+modal-id: 1
+date: 2022-10-24
+img: dreams.png
+thumbnail: technicalpresentation.jpg
+alt: image-alt
+project-date: October 2022
+description: <iframe width ='100%' height = '1500' src="https://gwu0-my.sharepoint.com/personal/burnettcj1966_gwu_edu/_layouts/15/Doc.aspx?sourcedoc={82a8ee42-d847-4d72-990f-2919090e9a45}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="286px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
+---
