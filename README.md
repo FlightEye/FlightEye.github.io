@@ -1,3 +1,5 @@
+Local Building: 'jekyll serve'
+
 Agency Jekyll theme
 ====================
 
