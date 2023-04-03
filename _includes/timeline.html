@@ -35,14 +35,14 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Jan-Feb 2023</h4>
-                                    <h4 class="subheading">Beta-Demo: Integration</h4>
+                                    <h4 class="subheading">Network Connection</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">FlightEye will demonstrate the ability to integrate real-time networking data into a simulated environment to create an accurate test bed for the predictive algorithm.
+                                    <p class="text-muted">After generating ADS-B data in JSON format, FlightEye uses a private WiFi connection to send JSON data from the Raspberry Pi to the HoloLens 2. As long as
+                                        the Raspberry Pi is powered on and the HoloLens 2 is connected to the Pi's network, data transmission will begin.
                                     </p>
-                                    <p class="text-hidden" style="display: none;">To do this, we attach a 1090MHz antenna and GPS receiver to our Rapsberry Pi. We run a specialized program on the Raspberry Pi called dump1090 
-                                        which performs the hexidemical decoding of incoming ADS-B packets. Upon decoding, each ADS-B transmission is converted to JSON format.
+                                    <p class="text-hidden" style="display: none;">The Raspberry Pi serves as a personal WiFi hotspot that the HoloLens 2 must connect to. As long as the HoloLens 2 is connected to the WiFi and
+                                        the FlightEye app has been opened, the Raspberry Pi will start sending network traffic to the HoloLens 2. On the HoloLens, this data is parsed and converted into C# objects.
                                     </p>
                                     <button class="btn btn-primary btn-more" id="flight-more-btn">Show More</button>
                                 </div>
@@ -54,11 +54,17 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Mar-May 2023</h4>
-                                    <h4 class="subheading">Final Demo: Full Functionality</h4>
+                                    <h4 class="subheading">Predictive Algorithm</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">FlightEye will demonstrate the ability to receive real-world ADS-B data and accurately display it to the pilot wearing the Microsoft HoloLens 2.</p>
+                                    <p class="text-muted">FlightEye will demonstrate the ability to receive real-world ADS-B data and accurately display it to the pilot wearing the Microsoft HoloLens 2.
+
+                                    </p>
+                                    <p class="text-hidden" style="display: none;">The Raspberry Pi serves as a personal WiFi hotspot that the HoloLens 2 must connect to. As long as the HoloLens 2 is connected to the WiFi and
+                                        the FlightEye app has been opened, the Raspberry Pi will start sending network traffic to the HoloLens 2. On the HoloLens, this data is parsed and converted into C# objects.
+                                    </p>
+                                    <button class="btn btn-primary btn-more" id="flight-more-btn">Show More</button>
+
                                 </div>
                             </div>
                         </li>
@@ -68,9 +74,16 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Beyond?</h4>
-                                    <h4 class="subheading">To the Moon...</h4>
+                                    <h4 class="subheading">UI Placement</h4>
                                 </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">FlightEye will demonstrate the ability to receive real-world ADS-B data and accurately display it to the pilot wearing the Microsoft HoloLens 2.
+
+                                    </p>
+                                    <p class="text-hidden" style="display: none;">The Raspberry Pi serves as a personal WiFi hotspot that the HoloLens 2 must connect to. As long as the HoloLens 2 is connected to the WiFi and
+                                        the FlightEye app has been opened, the Raspberry Pi will start sending network traffic to the HoloLens 2. On the HoloLens, this data is parsed and converted into C# objects.
+                                    </p>
+                                    <button class="btn btn-primary btn-more" id="flight-more-btn">Show More</button>
                             </div>
                         </li>
                     </ul>
