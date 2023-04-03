@@ -977,3 +977,71 @@ body {
     padding: 20px;
     margin-bottom: 10px;
   }
+
+  .box {
+    background-color: #ee4b2b;
+    border-radius: 10px;
+    padding: 20px;
+    height: 200px;
+    text-align: center;
+    border: 2px solid black;
+    box-sizing: border-box;
+  }
+
+  
+  .flip-box {
+    background-color: transparent;
+    perspective: 1000px;
+    height: 200px;
+    position: relative;
+  }
+  
+  .flip-box-inner {
+    position: absolute;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .flip-box:hover .flip-box-inner, .flip-box:focus .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px; 
+  }
+  
+  .flip-box-front {
+    z-index: 2;
+  }
+  
+  .flip-box-back {
+    transform: rotateY(180deg);
+    background-color: #d9d9d9;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  .flip-box-back .box {
+    background-color: #d9d9d9;
+    border: none;
+    color: black;
+  }
+  
+  .flip-box-back .box p {
+    color:black;
+  }
+  
+  .flip-box-back .box h2 {
+    color: black;
+  }
+
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
