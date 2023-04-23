@@ -12,7 +12,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/flighteyeUI.png" alt="">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -31,7 +31,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -57,11 +57,14 @@
                                     <h4 class="subheading">Predictive Algorithm</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">FlightEye will demonstrate the ability to receive real-world ADS-B data and accurately display it to the pilot wearing the Microsoft HoloLens 2.
+                                    <p class="text-muted">Our predictive algorithm uses linear-quadratic estimation to determine the approximate location of each nearby aircraft in between ADS-B transmissions. 
+                                        The algorithm is a derivation of the Kalman Filter, designed to sustain the computational intensity of real-time augmented reality systems. 
+                                        When activated, the UI markers will move smoothly across the viewport, modeling the instantaneous predicted location of an aircraft until a new ADS-B frame is received.
 
                                     </p>
-                                    <p class="text-hidden" style="display: none;">The Raspberry Pi serves as a personal WiFi hotspot that the HoloLens 2 must connect to. As long as the HoloLens 2 is connected to the WiFi and
-                                        the FlightEye app has been opened, the Raspberry Pi will start sending network traffic to the HoloLens 2. On the HoloLens, this data is parsed and converted into C# objects.
+                                    <p class="text-hidden" style="display: none;">The predictive algorithm calculates aircraft locations based on a time-based weighted average of past ADS-B transmissions. 
+                                        Predicted changes in motion are determined from 3-axis accelerations, as well as the time since the last transmission. Upon reception of new ADS-B data, errors in 
+                                        prediction will be corrected by smoothly “catching” the correct position. All predictions are performed directly on the headset; this improves the fluidity of the UI and prevents pilot distraction.
                                     </p>
                                     <button class="btn btn-primary btn-more" id="flight-more-btn">Show More</button>
 
@@ -70,18 +73,20 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/flighteyeUI.png" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4 class="subheading">UI Placement</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">FlightEye will demonstrate the ability to receive real-world ADS-B data and accurately display it to the pilot wearing the Microsoft HoloLens 2.
+                                    <p class="text-muted">Once all of the aircraft data is updated, we are ready to render the marker for each aircraft within the headset. Our rendering algorithm allows for exactly 500ft of error in all directions,
+                                         which consequently makes closer aircraft appear larger perspectively. Additionally, an aircraft icon is displayed on the marker which models the exact 6DOF position of the aircraft in space, and this allows 
+                                         the pilot to perform a quick evaluation of each aircraft's orientation. For those who require more precise information, the numerical data corresponding to each aircraft is displayed alongside the icon.
 
                                     </p>
-                                    <p class="text-hidden" style="display: none;">The Raspberry Pi serves as a personal WiFi hotspot that the HoloLens 2 must connect to. As long as the HoloLens 2 is connected to the WiFi and
-                                        the FlightEye app has been opened, the Raspberry Pi will start sending network traffic to the HoloLens 2. On the HoloLens, this data is parsed and converted into C# objects.
+                                    <p class="text-hidden" style="display: none;">FlightEye software computes the bearing and distance of each respective airplane within a defined filtering range, and this information is used to determine a location 
+                                        for the markers within the viewport of the operating pilot. The position of the markers is also dependent on a self-correcting system that employs an external GPS and the HoloLens internal IMU to compute user orientation and geodesic position.
                                     </p>
                                     <button class="btn btn-primary btn-more" id="flight-more-btn">Show More</button>
                             </div>
