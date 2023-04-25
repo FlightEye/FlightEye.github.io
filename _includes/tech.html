@@ -17,7 +17,9 @@
                   </div>
                   <div class="flip-box-back">
                     <div class="box">
-                      <p>In order to develop the FlightEye application for the Microsoft HoloLens 2, we needed an environment that could deploy to the HoloLens......</p>
+                      <p>Unity is the primary development enviornment for deploying software on the Microsoft HoloLens. The platform allows us to generate renderings that correlate directly with our
+                        geospatial orientation.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -33,7 +35,10 @@
                   </div>
                   <div class="flip-box-back">
                     <div class="box">
-                      <p>Text Box 2</p>
+                      <p>FlightEye makes use of two seperate components: our custom ADS-B enclosure (code named ADS-Box) and the Microsoft HoloLens 2. The ADS-B enclosure is comprised
+                        of a 1090MHz antenna, GPS dongle, and a Raspberry Pi. The enclosure gathers all relevant data for nearby aircraft and user position and sends it wirelessly to the HoloLens 2 via a WiFi network hosted
+                        on the Raspberry Pi.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -46,12 +51,14 @@
                 <div class="flip-box-inner">
                   <div class="flip-box-front">
                     <div class="box">
-                      <h2>Microsoft MKRT</h2>
+                      <h2>Microsoft MRKT</h2>
                     </div>
                   </div>
                   <div class="flip-box-back">
                     <div class="box">
-                      <p>Text Box 3</p>
+                      <p>MRKT provides us with the ability to interact with tracking and sensing within the Microsoft HoloLens. In our project, MRTK allows us to generate hand menus, utilize eye tracking,
+                        and build our project for deployment.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -67,7 +74,8 @@
                   </div>
                   <div class="flip-box-back">
                     <div class="box">
-                      <p>Text Box 4</p>
+                      <p>In order to receive and decode ADS-B transmissions, FlightEye uses an industry standard, open-source, program called dump1090. This program runs on the Raspberry Pi and configures the gain of the
+                        1090MHz antenna, and decodes the incoming ADS-B packets. dump1090 then outputs the decoded packets into a simple JSON file, which is sent to the HoloLens 2 so it can be displayed. </p>
                     </div>
                   </div>
                 </div>
